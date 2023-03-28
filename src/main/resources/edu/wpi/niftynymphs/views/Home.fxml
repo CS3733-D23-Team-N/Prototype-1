@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,14 +10,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.niftynymphs.controllers.HomeController">
    <children>
       <GridPane alignment="TOP_CENTER" layoutX="20.0" layoutY="-4.0" minHeight="648.0" minWidth="1280.0" prefHeight="648.0" prefWidth="1260.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" />
          </columnConstraints>
          <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
             <RowConstraints vgrow="SOMETIMES" />
             <RowConstraints maxHeight="573.7777786254883" minHeight="0.0" prefHeight="76.22221628824869" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="730.5555725097656" minHeight="10.0" prefHeight="477.77778371175134" valignment="TOP" vgrow="SOMETIMES" />
@@ -29,12 +28,7 @@
                   <Font name="Open Sans Regular" size="69.0" />
                </font>
             </Text>
-            <ImageView fitHeight="40.0" fitWidth="40.0" translateX="143.0" translateY="-8.0" GridPane.rowIndex="1">
-               <image>
-                  <Image url="@homepageResources/Sinage.png" />
-               </image>
-            </ImageView>
-            <HBox alignment="CENTER" prefWidth="1280.0" GridPane.rowIndex="2">
+            <HBox alignment="CENTER" prefWidth="1280.0" GridPane.rowIndex="3">
                <children>
                   <ImageView fitHeight="472.0" fitWidth="1000.0" translateY="-21.0">
                      <image>
@@ -43,7 +37,7 @@
                   </ImageView>
                </children>
             </HBox>
-            <GridPane GridPane.rowIndex="2">
+            <GridPane GridPane.rowIndex="3">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="712.888916015625" minWidth="10.0" prefWidth="57.33333460489909" />
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="1391.9999987284343" minWidth="10.0" prefWidth="1324.6666653951008" />
@@ -58,74 +52,48 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="182.0" prefWidth="1261.0" spacing="60.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <MFXButton fx:id="conferenceRoomButton" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="77.0" maxWidth="250.0" minHeight="77.0" minWidth="250.0" prefHeight="77.0" prefWidth="250.0" text="ConferenceRoom" textOverrun="CLIP">
-                           <font>
-                              <Font size="1.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="77.0" fitWidth="250.0" nodeOrientation="INHERIT">
-                                 <image>
-                                    <Image url="@homepageResources/Conference%20Room%20Reservation%20Request%20Button.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </MFXButton>
-                        <MFXButton fx:id="conferenceRoomButton1" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="77.0" maxWidth="250.0" minHeight="77.0" minWidth="250.0" prefHeight="77.0" prefWidth="250.0" text="MealDelivery" textOverrun="CLIP">
-                           <font>
-                              <Font size="1.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fx:id="MealDeliveryButton" fitHeight="77.0" fitWidth="250.0">
-                                 <image>
-                                    <Image url="@homepageResources/Meal%20Delivery%20Request.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </MFXButton>
-                        <MFXButton fx:id="conferenceRoomButton11" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="77.0" maxWidth="250.0" minHeight="77.0" minWidth="250.0" prefHeight="77.0" prefWidth="250.0" text="FlowerDelivery" textOverrun="CLIP">
-                           <font>
-                              <Font size="1.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fx:id="flowerDeliveryButton" fitHeight="77.0" fitWidth="250.0">
-                                 <image>
-                                    <Image url="@homepageResources/Flower%20Delivery%20Request.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </MFXButton>
+                        <ImageView fitHeight="77.0" fitWidth="250.0" nodeOrientation="INHERIT" onMouseClicked="#navigateConferenceRoom">
+                           <image>
+                              <Image url="@homepageResources/Conference%20Room%20Reservation%20Request%20Button.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="mealDeliveryButton" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateMealDelivery">
+                           <image>
+                              <Image url="@homepageResources/Meal%20Delivery%20Request.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="flowerDeliveryButton" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateFlowerDelivery">
+                           <image>
+                              <Image url="@homepageResources/Flower%20Delivery%20Request.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </HBox>
                   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <MFXButton fx:id="FurnitureDeliveryButton" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="77.0" maxWidth="250.0" minHeight="77.0" minWidth="250.0" prefHeight="77.0" prefWidth="250.0" text="FurnitureDelivery" textOverrun="CLIP">
-                           <font>
-                              <Font size="1.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="77.0" fitWidth="250.0">
-                                 <image>
-                                    <Image url="@homepageResources/Furniture%20Delivery%20Request.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </MFXButton>
-                        <MFXButton fx:id="OfficeDeliveryButton" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="77.0" maxWidth="250.0" minHeight="77.0" minWidth="250.0" prefHeight="77.0" prefWidth="250.0" text="OfficeDelivery" textOverrun="CLIP">
-                           <font>
-                              <Font size="1.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="77.0" fitWidth="250.0">
-                                 <image>
-                                    <Image url="@homepageResources/Office%20Supplies%20Purchase%20and%20Delivery%20Request.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </MFXButton>
+                        <ImageView fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateFurnitureDelivery">
+                           <image>
+                              <Image url="@homepageResources/Furniture%20Delivery%20Request.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateOfficeSupply">
+                           <image>
+                              <Image url="@homepageResources/Office%20Supplies%20Purchase%20and%20Delivery%20Request.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </HBox>
                </children>
             </GridPane>
+            <HBox GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#navigateSignage" translateX="150.0">
+                     <image>
+                        <Image url="@homepageResources/Sinage.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
          </children>
       </GridPane>
    </children>
