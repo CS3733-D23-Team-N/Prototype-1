@@ -36,9 +36,9 @@ public class ConferenceServiceRequestController {
     ObservableList<String> times = FXCollections.observableArrayList("8:00", "9:00", "10:00", "11:00", "12:00");
     startTimeBox.setItems(times);
 
-    rooms.add(new ConferenceRoom("", "L1", 8));
-    rooms.add(new ConferenceRoom("", "L1", 8));
-    rooms.add(new ConferenceRoom("", "L1", 8));
+    rooms.add(new ConferenceRoom("Anesthesia Conference Room", "L1", 8));
+    rooms.add(new ConferenceRoom("Medical Research Conference Room", "L1", 8));
+    rooms.add(new ConferenceRoom("Abrams Company Conference Room", "L1", 8));
     confButton1.setOnMouseClicked(event -> setSelectedRoom(rooms.get(0)));
     confButton2.setOnMouseClicked(event -> setSelectedRoom(rooms.get(1)));
     confButton3.setOnMouseClicked(event -> setSelectedRoom(rooms.get(2)));
