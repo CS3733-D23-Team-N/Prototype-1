@@ -9,7 +9,6 @@ import io.github.palexdev.materialfx.controls.MFXComboBox;
 import io.github.palexdev.materialfx.controls.MFXDatePicker;
 import io.github.palexdev.materialfx.controls.MFXTextField;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import javafx.fxml.FXML;
 
@@ -27,7 +26,7 @@ public class ConferenceServiceRequestController {
   @FXML MFXTextField capacityField;
 
   private ConferenceRoom selectedRoom;
-  private ArrayList<ConferenceRoom> rooms;
+  private ArrayList<ConferenceRoom> rooms = new ArrayList<>();
   private ArrayList<ConferenceServiceRequest> serviceRequests;
 
   @FXML
@@ -47,11 +46,11 @@ public class ConferenceServiceRequestController {
 
   public void submit() {
     LocalDate date = datePicker.getValue();
-    LocalTime startTime = startTimeBox.getValue();
-    LocalTime endTime = endTimeBox.getValue();
-    int capacity = capacityField.getText();
-    ConferenceServiceRequest serviceRequest =
-        new ConferenceServiceRequest(date, startTime, endTime, capacity, selectedRoom);
-    serviceRequests.add(serviceRequest);
+    // LocalTime startTime = startTimeBox.getValue();
+    // LocalTime endTime = endTimeBox.getValue();
+    // int capacity = capacityField.getText();
+    // ConferenceServiceRequest serviceRequest =
+    //    new ConferenceServiceRequest(date, startTime, endTime, capacity, selectedRoom);
+    // serviceRequests.add(serviceRequest);
   }
 }
