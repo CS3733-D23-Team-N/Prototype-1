@@ -10,12 +10,14 @@ import io.github.palexdev.materialfx.controls.MFXDatePicker;
 import io.github.palexdev.materialfx.controls.MFXTextField;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 
 public class ConferenceServiceRequestController {
 
   @FXML MFXButton submitButton;
-  @FXML MFXButton filterButton;
+  // @FXML MFXButton filterButton;
   @FXML MFXButton confButton1;
   @FXML MFXButton confButton2;
   @FXML MFXButton confButton3;
@@ -31,12 +33,16 @@ public class ConferenceServiceRequestController {
 
   @FXML
   public void initialize() {
+    ObservableList<String> times = FXCollections.observableArrayList("8:00", "9:00", "10:00", "11:00", "12:00");
+    startTimeBox.setItems(times);
+
     rooms.add(new ConferenceRoom("", "L1", 8));
     rooms.add(new ConferenceRoom("", "L1", 8));
     rooms.add(new ConferenceRoom("", "L1", 8));
     confButton1.setOnMouseClicked(event -> setSelectedRoom(rooms.get(0)));
     confButton2.setOnMouseClicked(event -> setSelectedRoom(rooms.get(1)));
     confButton3.setOnMouseClicked(event -> setSelectedRoom(rooms.get(2)));
+
     submitButton.setOnMouseClicked(event -> Navigation.navigate(Screen.HOME));
   }
 
