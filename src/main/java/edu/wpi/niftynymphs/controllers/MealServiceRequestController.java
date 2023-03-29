@@ -38,13 +38,13 @@ public class MealServiceRequestController {
 
     submitButton.setOnMouseClicked(event -> {
       if(selected == 0){
-        // Navigate to pizza page
+        Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pizza);
       }
       if(selected == 1){
-        // Navigate to pasta page
+        Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pasta);
       }
       if(selected ==2){
-        // Navigate to cake page
+        Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Cake);
       }
     });
 
