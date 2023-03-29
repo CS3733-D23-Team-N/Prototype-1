@@ -3,7 +3,8 @@ package edu.wpi.niftynymphs.navigation;
 public enum Screen {
   ROOT("views/Root.fxml"),
   HOME("views/Home.fxml"),
-  SERVICE_REQUEST("views/MealServiceRequest.fxml");
+  MEAL_SERVICE_REQUEST("views/MealServiceRequest.fxml"),
+  HELP("views/Help.fxml");
 
   private final String filename;
 
