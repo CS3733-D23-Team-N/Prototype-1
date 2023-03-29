@@ -11,7 +11,7 @@ public class HomeController {
   public void initialize() {}
 
   public void navigateConferenceRoom() {
-    Navigation.navigate(Screen.MEAL_SERVICE_REQUEST);
+    Navigation.navigate(Screen.CONFERENCE_SERVICE_REQUEST);
   }
 
   public void navigateMealDelivery() {
