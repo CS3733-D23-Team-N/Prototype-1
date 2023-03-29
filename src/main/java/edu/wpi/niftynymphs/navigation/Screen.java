@@ -5,6 +5,8 @@ public enum Screen {
   HOME("views/Home.fxml"),
   CONFERENCE_SERVICE_REQUEST("views/ConferenceServiceRequest.fxml"),
   HELP("views/Help.fxml"),
+
+  HELP_HOME("views/help/HelpHome.fxml"),
   SIGNAGE("views/Signage.fxml");
 
   private final String filename;
