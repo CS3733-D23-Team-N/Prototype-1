@@ -6,17 +6,19 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="340.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.niftynymphs.controllers.help.MainHelpController">
    <children>
-      <VBox alignment="CENTER" prefHeight="340.0" prefWidth="380.0">
+      <VBox alignment="CENTER" prefHeight="583.0" prefWidth="1024.0">
          <children>
             <Label text="Home Page">
                <font>
-                  <Font size="20.0" />
+                  <Font size="26.0" />
                </font>
             </Label>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Press the logo or the name of the hospital in the top left to be&#10; redirected to the home menu.&#10;&#10;Click the question mark button in the top right to be directed to &#10;the main help page&#10;&#10;Click the red X to close the application at any time&#10;&#10;Click the specific help page to see more information about that &#10;feature." />
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Press the logo or the name of the hospital in the top left to be redirected to the home menu.&#10;&#10;Click the question mark button in the top right to be directed to the main help page&#10;&#10;Click the red X to close the application at any time&#10;&#10;Click the specific help page to see more information about that feature.">
+               <font>
+                  <Font size="18.0" />
+               </font></TextArea>
          </children>
       </VBox>
    </children>
