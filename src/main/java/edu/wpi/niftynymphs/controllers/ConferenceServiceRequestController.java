@@ -24,13 +24,13 @@ public class ConferenceServiceRequestController {
   @FXML MFXButton confButton3;
 
   @FXML MFXDatePicker datePicker;
-  @FXML MFXComboBox startTimeBox;
-  @FXML MFXComboBox endTimeBox;
+  @FXML MFXComboBox<String> startTimeBox;
+  @FXML MFXComboBox<String> endTimeBox;
   @FXML MFXTextField capacityField;
 
   private ConferenceRoom selectedRoom = new ConferenceRoom("No room selected", "", 0);
-  private ArrayList<ConferenceRoom> rooms = new ArrayList<>();
-  private ArrayList<ConferenceServiceRequest> serviceRequests = new ArrayList<>();
+  private final ArrayList<ConferenceRoom> rooms = new ArrayList<>();
+  private final ArrayList<ConferenceServiceRequest> serviceRequests = new ArrayList<>();
 
   @FXML
   public void initialize() {
