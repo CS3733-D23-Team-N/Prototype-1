@@ -36,10 +36,10 @@ public class MealServiceRequestController {
       if(selected == 0){
         Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pizza);
       }
-      if(selected == 1){
+      else if(selected == 1){
         Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pasta);
       }
-      if(selected ==2){
+      else if(selected == 2){
         Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Cake);
       }
     });

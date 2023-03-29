@@ -11,23 +11,23 @@ public class HomeController {
   public void initialize() {}
 
   public void navigateConferenceRoom() {
-    Navigation.navigate(Screen.SERVICE_REQUEST);
+    Navigation.navigate(Screen.MEAL_SERVICE_REQUEST);
   }
 
   public void navigateMealDelivery() {
-    Navigation.navigate(Screen.SERVICE_REQUEST);
+    Navigation.navigate(Screen.MEAL_SERVICE_REQUEST);
   }
 
   public void navigateFlowerDelivery() {
-    Navigation.navigate(Screen.SERVICE_REQUEST);
+    Navigation.navigate(Screen.MEAL_SERVICE_REQUEST);
   }
 
   public void navigateFurnitureDelivery() {
-    Navigation.navigate(Screen.SERVICE_REQUEST);
+    Navigation.navigate(Screen.MEAL_SERVICE_REQUEST);
   }
 
   public void navigateOfficeSupply() {
-    Navigation.navigate(Screen.SERVICE_REQUEST);
+    Navigation.navigate(Screen.MEAL_SERVICE_REQUEST);
   }
 
   public void navigateSignage() {
