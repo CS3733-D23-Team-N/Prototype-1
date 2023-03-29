@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -19,62 +20,69 @@
       <RowConstraints maxHeight="705.0271453857422" minHeight="0.0" percentHeight="30.0" prefHeight="705.0271453857422" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <HBox prefWidth="1512.0" GridPane.vgrow="NEVER">
          <children>
-            <MFXTextField alignment="TOP_LEFT" floatMode="DISABLED" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="213.0" prefWidth="628.0" style="-fx-background-color: transparent; -fx-border-width: 0;" text="Signage" HBox.hgrow="ALWAYS">
+            <Label text="Signage">
                <font>
-                  <Font name="Comic Sans MS" size="76.0" />
+                  <Font name="Open Sans Regular" size="76.0" />
                </font>
-            </MFXTextField>
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+            </Label>
          </children>
       </HBox>
       <HBox GridPane.rowIndex="1">
          <children>
-            <MFXTextField alignment="TOP_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Shapiro 2">
+            <Label text="Shapiro 2">
                <font>
                   <Font name="Open Sans Regular" size="36.0" />
                </font>
-            </MFXTextField>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
          <children>
             <ImageView fitHeight="100.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/LeftArrow1.png" />
                </image>
             </ImageView>
-            <MFXTextField alignment="TOP_LEFT" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="537.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Watkins Clinic A &amp; B (this floor)">
+            <Label text="Watkins Clinic A &amp; B (this floor)">
                <font>
-                  <Font size="30.0" />
+                  <Font size="32.0" />
                </font>
-            </MFXTextField>
+            </Label>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
          <children>
             <ImageView fitHeight="100.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/LeftArrow1.png" />
                </image>
             </ImageView>
-            <MFXTextField alignment="TOP_LEFT" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="537.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Watkins Clinic C (third floor)">
+            <Label text="Watkins Clinic C (third floor)">
                <font>
-                  <Font size="30.0" />
+                  <Font size="32.0" />
                </font>
-            </MFXTextField>
+            </Label>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
-            <MFXTextField alignment="TOP_RIGHT" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="537.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Information">
+            <Label text="Information">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Open Sans Regular" size="32.0" />
                </font>
-            </MFXTextField>
+            </Label>
             <ImageView fitHeight="100.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
                <image>
                   <Image url="@../Images/LeftArrow1.png" />
@@ -82,27 +90,27 @@
             </ImageView>
          </children>
       </HBox>
-      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
          <children>
             <ImageView fitHeight="100.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/LeftArrow1.png" />
                </image>
             </ImageView>
-            <MFXTextField alignment="TOP_LEFT" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="542.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Rehabilitation Services (1st floor)">
+            <Label text="Rehabilitation Services (1st floor)">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Open Sans Regular" size="32.0" />
                </font>
-            </MFXTextField>
+            </Label>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <children>
-            <MFXTextField alignment="TOP_RIGHT" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="537.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Shapiro Admitting">
+            <Label text="Shapiro Admitting">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Open Sans Regular" size="32.0" />
                </font>
-            </MFXTextField>
+            </Label>
             <ImageView fitHeight="100.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
                <image>
                   <Image url="@../Images/LeftArrow1.png" />
@@ -110,13 +118,13 @@
             </ImageView>
          </children>
       </HBox>
-      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <children>
-            <MFXTextField alignment="TOP_RIGHT" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="537.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Shapiro Procedural Check-In">
+            <Label text="Shapiro Procedural Check-In">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Open Sans Regular" size="32.0" />
                </font>
-            </MFXTextField>
+            </Label>
             <ImageView fitHeight="100.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
                <image>
                   <Image url="@../Images/LeftArrow1.png" />
