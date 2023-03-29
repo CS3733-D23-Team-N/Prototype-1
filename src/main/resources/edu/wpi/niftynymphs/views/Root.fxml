@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" />
+<BorderPane fx:id="innerBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: E8EBEF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.niftynymphs.controllers.RootController">
+   <top>
+        <GridPane fx:id="innerGridPane" prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: ffffff;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="41.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="55.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER">
+                    <children>
+                        <ImageView fx:id="homeLogo" fitHeight="117.0" fitWidth="442.0" onMouseClicked="#navigateHome" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/bwh-logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" GridPane.columnIndex="2">
+                    <children>
+                        <ImageView fx:id="helpIcon" fitHeight="153.0" fitWidth="73.0" onMouseClicked="#navigateHelp" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/help-icon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" GridPane.columnIndex="3">
+                    <children>
+                        <ImageView fx:id="exitIcon" fitHeight="75.0" fitWidth="66.0" onMouseClicked="#exitApp" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/exit-icon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+   </top>
+</BorderPane>
