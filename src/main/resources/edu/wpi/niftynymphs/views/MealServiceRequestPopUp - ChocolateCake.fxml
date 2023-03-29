@@ -39,13 +39,13 @@
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                            <children>
                               <Label text="Room: *" />
-                              <MFXComboBox />
+                              <MFXComboBox fx:id="cakeRoom" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                            <children>
                               <Label text="Delivery Time: *" />
-                              <MFXComboBox />
+                              <MFXComboBox fx:id="cakeDeliveryTime" />
                            </children>
                         </HBox>
                      </children>
