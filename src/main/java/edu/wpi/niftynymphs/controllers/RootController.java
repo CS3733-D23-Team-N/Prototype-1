@@ -10,7 +10,6 @@ import javafx.scene.layout.GridPane;
 
 public class RootController {
 
-
   // Panes
   @FXML GridPane outerGridPane;
   @FXML GridPane innerGridPane;

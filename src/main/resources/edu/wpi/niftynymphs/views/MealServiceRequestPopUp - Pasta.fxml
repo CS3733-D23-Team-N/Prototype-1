@@ -10,7 +10,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="edu.wpi.niftynymphs.controllers.MealServiceRequestPastaController">
    <children>
       <VBox prefHeight="301.0" prefWidth="270.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
          <children>
@@ -63,19 +64,19 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="confirmPasta" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0F2C57; -fx-border-radius: 16;" text="Confirm" textFill="WHITE">
+                  <MFXButton fx:id="confirmPasta" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0F2C57; -fx-border-radius: 16;" text="Confirm" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
-                  </Button>
-                  <Button fx:id="cancelPasta" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0F2C57; -fx-border-radius: 16;" text="Cancel" textFill="WHITE">
+                  </MFXButton>
+                  <MFXButton fx:id="cancelPasta" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0F2C57; -fx-border-radius: 16;" text="Cancel" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <HBox.margin>
                         <Insets left="250.0" />
                      </HBox.margin>
-                  </Button>
+                  </MFXButton>
                </children>
                <opaqueInsets>
                   <Insets />

@@ -2,7 +2,6 @@ package edu.wpi.niftynymphs.controllers;
 
 import edu.wpi.niftynymphs.navigation.Navigation;
 import edu.wpi.niftynymphs.navigation.Screen;
-import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -20,30 +19,30 @@ public class MealServiceRequestController {
   @FXML
   public void initialize() {
 
-    pizzaButton.setOnMouseClicked(event -> {
-      selected = 0;
-    });
+    pizzaButton.setOnMouseClicked(
+        event -> {
+          selected = 0;
+        });
 
-    pastaButton.setOnMouseClicked(event -> {
-      selected = 1;
-    });
+    pastaButton.setOnMouseClicked(
+        event -> {
+          selected = 1;
+        });
 
-    cakeButton.setOnMouseClicked(event -> {
-      selected = 2;
-    });
+    cakeButton.setOnMouseClicked(
+        event -> {
+          selected = 2;
+        });
 
-    submitButton.setOnMouseClicked(event -> {
-      if(selected == 0){
-        Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pizza);
-      }
-      else if(selected == 1){
-        Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pasta);
-      }
-      else if(selected == 2){
-        Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Cake);
-      }
-    });
-
-
+    submitButton.setOnMouseClicked(
+        event -> {
+          if (selected == 0) {
+            Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pizza);
+          } else if (selected == 1) {
+            Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Pasta);
+          } else if (selected == 2) {
+            Navigation.navigate(Screen.MEAL_SERVICE_REQUEST_POP_UP_Cake);
+          }
+        });
   }
 }

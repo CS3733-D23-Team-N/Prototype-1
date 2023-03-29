@@ -7,8 +7,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-
 public class Meal {
-    private String name;
-
+  private String name;
 }
