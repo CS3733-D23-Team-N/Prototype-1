@@ -52,17 +52,17 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="182.0" prefWidth="1261.0" spacing="60.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="77.0" fitWidth="250.0" nodeOrientation="INHERIT" onMouseClicked="#navigateConferenceRoom">
+                        <ImageView fx:id="conferenceRoom" fitHeight="77.0" fitWidth="250.0" nodeOrientation="INHERIT" onMouseClicked="#navigateConferenceRoom" onMouseEntered="#conferenceRoomLight" onMouseExited="#conferenceRoomDark" onTouchPressed="#conferenceRoomLight" onTouchReleased="#conferenceRoomDark">
                            <image>
                               <Image url="@../images/Conference Room Reservation Request Button.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="mealDeliveryButton" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateMealDelivery">
+                        <ImageView fx:id="mealDelivery" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateMealDelivery" onMouseEntered="#mealDeliveryLight" onMouseExited="#mealDeliveryDark" onTouchPressed="#mealDeliveryLight" onTouchReleased="#mealDeliveryDark">
                            <image>
                               <Image url="@../images/Meal Delivery Request.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="flowerDeliveryButton" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateFlowerDelivery">
+                        <ImageView fx:id="flowerDelivery" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateFlowerDelivery" onMouseEntered="#flowerDeliveryLight" onMouseExited="#flowerDeliveryDark" onTouchPressed="#flowerDeliveryLight" onTouchReleased="#flowerDeliveryDark">
                            <image>
                               <Image url="@../images/Flower Delivery Request.png" />
                            </image>
@@ -71,12 +71,12 @@
                   </HBox>
                   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <ImageView fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateFurnitureDelivery">
+                        <ImageView fx:id="furnitureDelivery" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateFurnitureDelivery" onMouseEntered="#furnitureDeliveryLight" onMouseExited="#furnitureDeliveryDark" onTouchPressed="#furnitureDeliveryLight" onTouchReleased="#furnitureDeliveryDark">
                            <image>
                               <Image url="@../images/Furniture Delivery Request.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateOfficeSupply">
+                        <ImageView fx:id="officeDelivery" fitHeight="77.0" fitWidth="250.0" onMouseClicked="#navigateOfficeSupply" onMouseEntered="#officeDeliveryLight" onMouseExited="#officeDeliveryDark" onTouchPressed="#officeDeliveryLight" onTouchReleased="#officeDeliveryDark">
                            <image>
                               <Image url="@../images/Office Supplies Purchase and Delivery Request.png" />
                            </image>
