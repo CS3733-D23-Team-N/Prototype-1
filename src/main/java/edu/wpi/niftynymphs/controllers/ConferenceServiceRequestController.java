@@ -18,7 +18,7 @@ import javafx.fxml.FXML;
 public class ConferenceServiceRequestController {
 
   @FXML MFXButton submitButton;
-  // @FXML MFXButton filterButton;
+  @FXML MFXButton clearButton;
   @FXML MFXButton confButton1;
   @FXML MFXButton confButton2;
   @FXML MFXButton confButton3;
@@ -48,6 +48,7 @@ public class ConferenceServiceRequestController {
     confButton2.setOnMouseClicked(event -> confButtonClick(confButton2, rooms.get(1)));
     confButton3.setOnMouseClicked(event -> confButtonClick(confButton3, rooms.get(2)));
 
+    clearButton.setOnMouseClicked(event -> clear());
     submitButton.setOnMouseClicked(event -> submit());
   }
 
@@ -57,6 +58,17 @@ public class ConferenceServiceRequestController {
     confButton3.setStyle("-fx-border-color: #FFFFFF");
     confButton.setStyle("-fx-border-color: #0F2C57");
     this.selectedRoom = room;
+  }
+
+  public void clear() {
+    datePicker.setText("");
+    startTimeBox.setText("");
+    endTimeBox.setText("");
+    capacityField.setText("");
+    confButton1.setStyle("-fx-border-color: #FFFFFF");
+    confButton2.setStyle("-fx-border-color: #FFFFFF");
+    confButton3.setStyle("-fx-border-color: #FFFFFF");
+    selectedRoom = new ConferenceRoom("No room selected", "", 0);
   }
 
   public void submit() {
