@@ -45,6 +45,14 @@ public class MealServiceRequestPastaController {
             Navigation.navigate(Screen.HOME);
         });
 
+        String deliveryTime;
+        String roomNumber;
+
+        deliveryTime = pastaDeliveryTime.getText();
+        roomNumber = pastaRoom.getText();
+        System.out.println("Pasta " + deliveryTime + " " + roomNumber);
+        Navigation.navigate(Screen.HOME);
+
     }
 
 }

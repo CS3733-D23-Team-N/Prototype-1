@@ -44,6 +44,15 @@ public class MealServiceRequestPizzaController {
         confirmPizza.setOnMouseClicked(event ->{
             Navigation.navigate(Screen.HOME);
         });
+
+        String deliveryTime;
+        String roomNumber;
+
+        deliveryTime = pizzaDeliveryTime.getText();
+        roomNumber = pizzaRoom.getText();
+        System.out.println("Pizza " + deliveryTime + " " + roomNumber);
+        Navigation.navigate(Screen.HOME);
+
     }
 
 

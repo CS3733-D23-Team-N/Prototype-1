@@ -17,9 +17,9 @@ public class MealServiceRequestCakeController {
     // attribute to hold some indicator of which button you selected
 
     @FXML
-    MFXComboBox cakeRoom;
+    MFXComboBox<String> cakeRoom;
     @FXML
-    MFXComboBox cakeDeliveryTime;
+    MFXComboBox<String> cakeDeliveryTime;
 
 
     @FXML
@@ -42,10 +42,12 @@ public class MealServiceRequestCakeController {
         cakeRoom.setItems(rooms);
 
         confirmCake.setOnMouseClicked(event ->{
-            Navigation.navigate(Screen.HOME);
-        });
+            String deliveryTime;
+            String roomNumber;
 
-        confirmCake.setOnMouseClicked(event ->{
+            deliveryTime = cakeDeliveryTime.getText();
+            roomNumber = cakeRoom.getText();
+            System.out.println("Chocolate Cake " + deliveryTime + " " + roomNumber);
             Navigation.navigate(Screen.HOME);
         });
 
