@@ -15,7 +15,7 @@
       </Label>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="16.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
+            <Button fx:id="pizzaButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
                <graphic>
                   <VBox spacing="4.0">
                      <children>
@@ -32,7 +32,7 @@
                      </children>
                   </VBox>
                </graphic></Button>
-            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
+            <Button fx:id="pastaButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
                <graphic>
                   <VBox spacing="4.0">
                      <children>
@@ -50,7 +50,7 @@
                   </VBox>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
+            <Button fx:id="cakeButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
                <graphic>
                   <VBox spacing="4.0">
                      <children>
@@ -68,13 +68,13 @@
                   </VBox>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #0F2C57;" text="Submit" textFill="WHITE">
+            <Button fx:id="submitButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #0F2C57;" text="Submit" textFill="WHITE">
                <VBox.margin>
                   <Insets left="280.0" />
                </VBox.margin>
             </Button>
          </children>
-      </VBox>`1
+      </VBox>
    </children>
    <padding>
       <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
