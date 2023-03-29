@@ -15,7 +15,7 @@ public class HomeController {
   }
 
   public void navigateMealDelivery() {
-    Navigation.navigate(Screen.SERVICE_REQUEST);
+    Navigation.navigate(Screen.MEAL_SERVICE_REQUEST);
   }
 
   public void navigateFlowerDelivery() {
