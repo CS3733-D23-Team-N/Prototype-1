@@ -1,20 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            prefHeight="400.0" prefWidth="600.0">
-    <MFXButton fx:id="backButton" text="Help">
-        <font>
-            <Font name="Nunito Sans Regular" size="16.0" />
-        </font>
-    </MFXButton>
-</AnchorPane>
+
 <!--            fx:controller="edu.wpi.niftynymphs.controllers.HelpController"-->
+
+<BorderPane fx:id="pageContainer" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.niftynymphs.controllers.HelpController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Help">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Help" textFill="#2b65ac">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Service Request" textFill="#2b65ac">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Conference Room Reservation Request" textFill="#2b65ac">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Meal Delivery Request" textFill="#2b65ac">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Flower Delivery Request" textFill="#2b65ac">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Furniture Delivery Request" textFill="#2b65ac">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Office Supplies Purchase and Delivery Request" textFill="#2b65ac">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Label text="Other Help" textFill="#2b65ac">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Signage" textFill="#2b65ac">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>
