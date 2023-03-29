@@ -4,7 +4,8 @@ public enum Screen {
   ROOT("views/Root.fxml"),
   HOME("views/Home.fxml"),
   MEAL_SERVICE_REQUEST("views/MealServiceRequest.fxml"),
-  HELP("views/Help.fxml");
+  HELP("views/Help.fxml"),
+  SIGNAGE("views/Signage.fxml");
 
   private final String filename;
 

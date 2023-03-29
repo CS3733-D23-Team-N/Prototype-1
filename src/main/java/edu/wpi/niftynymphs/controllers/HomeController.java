@@ -31,6 +31,6 @@ public class HomeController {
   }
 
   public void navigateSignage() {
-    Navigation.navigate(Screen.SERVICE_REQUEST);
+    Navigation.navigate(Screen.SIGNAGE);
   }
 }
