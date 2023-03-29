@@ -10,7 +10,6 @@
 
 <!--            fx:controller="edu.wpi.niftynymphs.controllers.HelpController"-->
 
-
 <BorderPane fx:id="pageContainer" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.niftynymphs.controllers.HelpController">
    <top>
       <HBox BorderPane.alignment="CENTER">
@@ -75,6 +74,9 @@
                </font>
             </Button>
          </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
       </VBox>
    </left>
 </BorderPane>
