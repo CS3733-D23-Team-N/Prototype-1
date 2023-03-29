@@ -92,12 +92,12 @@
                         <Font name="Open Sans Regular" size="14.0" />
                      </font>
                   </MFXButton>
-                  <MFXButton fx:id="confButton2" prefHeight="50.0" prefWidth="310.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10px;" text="Medical Research Conference Room C002L1" textFill="WHITE">
+                  <MFXButton fx:id="confButton2" prefHeight="50.0" prefWidth="310.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10px;" text="Medical Research Conference Room C002L1">
                      <font>
                         <Font name="Open Sans Regular" size="14.0" />
                      </font>
                   </MFXButton>
-                  <MFXButton fx:id="confButton3" prefHeight="50.0" prefWidth="310.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10px;" text="Abrams Company Conference Room C003L1" textFill="WHITE">
+                  <MFXButton fx:id="confButton3" prefHeight="50.0" prefWidth="310.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-background-radius: 10px;" text="Abrams Company Conference Room C003L1">
                      <font>
                         <Font name="Open Sans Regular" size="14.0" />
                      </font>

@@ -44,14 +44,18 @@ public class ConferenceServiceRequestController {
     rooms.add(new ConferenceRoom("Anesthesia Conference Room", "L1", 8));
     rooms.add(new ConferenceRoom("Medical Research Conference Room", "L1", 8));
     rooms.add(new ConferenceRoom("Abrams Company Conference Room", "L1", 8));
-    confButton1.setOnMouseClicked(event -> setSelectedRoom(rooms.get(0)));
-    confButton2.setOnMouseClicked(event -> setSelectedRoom(rooms.get(1)));
-    confButton3.setOnMouseClicked(event -> setSelectedRoom(rooms.get(2)));
+    confButton1.setOnMouseClicked(event -> confButtonClick(confButton1, rooms.get(0)));
+    confButton2.setOnMouseClicked(event -> confButtonClick(confButton2, rooms.get(1)));
+    confButton3.setOnMouseClicked(event -> confButtonClick(confButton3, rooms.get(2)));
 
     submitButton.setOnMouseClicked(event -> submit());
   }
 
-  public void setSelectedRoom(ConferenceRoom room) {
+  public void confButtonClick(MFXButton confButton, ConferenceRoom room) {
+    confButton1.setStyle("-fx-border-color: #FFFFFF");
+    confButton2.setStyle("-fx-border-color: #FFFFFF");
+    confButton3.setStyle("-fx-border-color: #FFFFFF");
+    confButton.setStyle("-fx-border-color: #0F2C57");
     this.selectedRoom = room;
   }
 
