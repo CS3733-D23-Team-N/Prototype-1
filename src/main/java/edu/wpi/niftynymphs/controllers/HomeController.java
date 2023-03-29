@@ -32,7 +32,8 @@ public class HomeController {
     Navigation.navigate(Screen.SIGNAGE);
   }
 
-  // Button color change when mouse move on the button
+  // Button color change when mouse move on the
+  // button---------------------------------------------------
   public void conferenceRoomLight() throws FileNotFoundException {
     InputStream stream =
         new FileInputStream(
@@ -65,18 +66,18 @@ public class HomeController {
     mealDelivery.setImage(newImg);
   }
 
-  public void flowerDeliveryDark() throws FileNotFoundException {
-    InputStream stream =
-        new FileInputStream(
-            "src/main/resources/edu/wpi/niftynymphs/images/Flower Delivery Request.png");
-    Image newImg = new Image(stream);
-    flowerDelivery.setImage(newImg);
-  }
-
   public void flowerDeliveryLight() throws FileNotFoundException {
     InputStream stream =
         new FileInputStream(
             "src/main/resources/edu/wpi/niftynymphs/images/Flower Delivery Request Light.png");
+    Image newImg = new Image(stream);
+    flowerDelivery.setImage(newImg);
+  }
+
+  public void flowerDeliveryDark() throws FileNotFoundException {
+    InputStream stream =
+        new FileInputStream(
+            "src/main/resources/edu/wpi/niftynymphs/images/Flower Delivery Request.png");
     Image newImg = new Image(stream);
     flowerDelivery.setImage(newImg);
   }
@@ -112,4 +113,6 @@ public class HomeController {
     Image newImg = new Image(stream);
     officeDelivery.setImage(newImg);
   }
+  // Button color change when mouse move on the
+  // button---------------------------------------------------
 }
