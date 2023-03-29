@@ -8,21 +8,17 @@ import javafx.scene.control.Button;
 
 public class MealServiceRequestController {
 
-  @FXML MFXButton backButton;
-
   @FXML Button pizzaButton;
   @FXML Button pastaButton;
   @FXML Button cakeButton;
 
   @FXML Button submitButton;
 
-
   // attribute to hold some indicator of which button you selected
   private int selected = -1;
 
   @FXML
   public void initialize() {
-    backButton.setOnMouseClicked(event -> Navigation.navigate(Screen.HOME));
 
     pizzaButton.setOnMouseClicked(event -> {
       selected = 0;
