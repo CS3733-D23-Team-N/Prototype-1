@@ -61,14 +61,26 @@
                   <Insets top="20.0" />
                </VBox.margin>
             </HBox>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0F2C57; -fx-border-radius: 16;" text="Confirm" textFill="WHITE">
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="confirmCake" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0F2C57; -fx-border-radius: 16;" text="Confirm" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelCake" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0F2C57; -fx-border-radius: 16;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="250.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            </HBox>
          </children>
          <VBox.margin>
             <Insets bottom="49.0" left="49.0" right="49.0" top="49.0" />
