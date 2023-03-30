@@ -5,9 +5,13 @@ public enum Screen {
   HOME("views/Home.fxml"),
   CONFERENCE_SERVICE_REQUEST("views/ConferenceServiceRequest.fxml"),
   HELP("views/Help.fxml"),
+  SIGNAGE("views/Signage.fxml"),
+  MEAL_SERVICE_REQUEST("views/MealServiceRequest.fxml"),
+  MEAL_SERVICE_REQUEST_POP_UP_Pizza("views/MealServiceRequestPopUp - Pizza.fxml"),
+  MEAL_SERVICE_REQUEST_POP_UP_Pasta("views/MealServiceRequestPopUp - Pasta.fxml"),
+  MEAL_SERVICE_REQUEST_POP_UP_Cake("views/MealServiceRequestPopUp - ChocolateCake.fxml"),
 
-  HELP_HOME("views/help/HelpHome.fxml"),
-  SIGNAGE("views/Signage.fxml");
+  HELP_HOME("views/help/HelpHome.fxml");
 
   private final String filename;
 
