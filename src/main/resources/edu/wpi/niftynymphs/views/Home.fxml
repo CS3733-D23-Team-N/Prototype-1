@@ -52,7 +52,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="182.0" prefWidth="1261.0" spacing="60.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="77.0" fitWidth="250.0" nodeOrientation="INHERIT">
+                        <ImageView fitHeight="77.0" fitWidth="250.0" nodeOrientation="INHERIT" onMouseClicked="#navigateConferenceRoom">
                            <image>
                               <Image url="@../images/Conference Room Reservation Request Button.png" />
                            </image>
@@ -62,7 +62,7 @@
                               <Image url="@../images/Meal Delivery Request.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="flowerDeliveryButton" fitHeight="77.0" fitWidth="250.0">
+                        <ImageView fx:id="flowerDeliveryButton" fitHeight="77.0" fitWidth="250.0" >
                            <image>
                               <Image url="@../images/Flower Delivery Request.png" />
                            </image>
@@ -71,12 +71,12 @@
                   </HBox>
                   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <ImageView fitHeight="77.0" fitWidth="250.0">
+                        <ImageView fitHeight="77.0" fitWidth="250.0" >
                            <image>
                               <Image url="@../images/Furniture Delivery Request.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="77.0" fitWidth="250.0">
+                        <ImageView fitHeight="77.0" fitWidth="250.0" >
                            <image>
                               <Image url="@../images/Office Supplies Purchase and Delivery Request.png" />
                            </image>

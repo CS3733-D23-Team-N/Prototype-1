@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e7EBEF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.niftynymphs.controllers.MealServiceRequestController">
    <children>
       <Label prefHeight="40.0" prefWidth="205.0" text="Meal Delivery">
@@ -16,7 +16,7 @@
       </Label>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="16.0" VBox.vgrow="ALWAYS">
          <children>
-            <MFXButton fx:id="pizzaButton" onMouseClicked="#onPizzaClicked" text="Button">
+            <MFXButton fx:id="pizzaButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
                <graphic>
                   <VBox spacing="4.0">
                      <children>
@@ -25,16 +25,15 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label text="Cheese, sausage, pepperoni, and more!">
+                        <Label text="Cheese, sausage, peporoni, and more!">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </VBox>
-               </graphic>
-            </MFXButton>
-            <MFXButton fx:id="pastaButton" onMouseClicked="#onPastaClicked">
+               </graphic></MFXButton>
+            <MFXButton fx:id="pastaButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
                <graphic>
                   <VBox spacing="4.0">
                      <children>
@@ -52,7 +51,7 @@
                   </VBox>
                </graphic>
             </MFXButton>
-            <MFXButton fx:id="chocolateCakeButton" onMouseClicked="#onChocolateCakeClicked">
+            <MFXButton fx:id="cakeButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
                <graphic>
                   <VBox spacing="4.0">
                      <children>
@@ -70,13 +69,13 @@
                   </VBox>
                </graphic>
             </MFXButton>
+            <MFXButton fx:id="submitButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #0F2C57;" text="Submit" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="280.0" />
+               </VBox.margin>
+            </MFXButton>
          </children>
       </VBox>
-      <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#onSubmit" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #0F2C57;" text="Submit" textFill="WHITE">
-         <VBox.margin>
-            <Insets left="280.0" />
-         </VBox.margin>
-      </Button>
    </children>
    <padding>
       <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
