@@ -44,6 +44,7 @@ public class MealServiceRequestCakeController {
 
           deliveryTime = cakeDeliveryTime.getText();
           roomNumber = cakeRoom.getText();
+          if (deliveryTime.isEmpty() || roomNumber.isEmpty()) return;
           System.out.println("Chocolate Cake " + deliveryTime + " " + roomNumber);
           Navigation.navigate(Screen.HOME);
         });

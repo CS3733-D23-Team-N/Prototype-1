@@ -44,6 +44,7 @@ public class MealServiceRequestPizzaController {
 
           deliveryTime = pizzaDeliveryTime.getText();
           roomNumber = pizzaRoom.getText();
+          if (deliveryTime.isEmpty() || roomNumber.isEmpty()) return;
           System.out.println("Pizza " + deliveryTime + " " + roomNumber);
           Navigation.navigate(Screen.HOME);
         });
